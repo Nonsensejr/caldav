@@ -2,7 +2,7 @@
 # -*- encoding: utf-8 -*-
 from setuptools import setup, find_packages
 
-version = '0.5.0'
+version = '0.5.2'
 
 if __name__ == '__main__':
     setup(

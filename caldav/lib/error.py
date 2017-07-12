@@ -16,7 +16,7 @@ class AuthorizationError(Exception):
             (self.url, self.reason)
 
 
-class PropsetError(Exception):
+class ProppatchError(Exception):
     pass
 
 
@@ -49,7 +49,7 @@ class NotFoundError(Exception):
 
 
 exception_by_method = {}
-for method in ('delete', 'put', 'mkcalendar', 'mkcol', 'report', 'propset',
+for method in ('delete', 'put', 'mkcalendar', 'mkcol', 'report', 'proppatch',
                'propfind'):
     exception_by_method[method] = \
         locals()[method[0].upper() + method[1:] + 'Error']
